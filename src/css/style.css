@@ -28,6 +28,9 @@
 .x-space{
     justify-content: space-between;
 }
+.x-around{
+    justify-content: space-around;
+}
 /*gestion y*/
 .y-center{
     align-items: center;
@@ -68,7 +71,6 @@ nav{
     left: 0px;
     width: 100%;
     height: 60px;
-    overflow: hidden;
 }
 nav a{
     transition: 0.5s;
@@ -96,7 +98,6 @@ nav .container{
 
 header{
     width: 100%;
-    background-image: url('../img/internet-oldman.jpg');
     background-size: cover;
 }
 header .container{
@@ -119,8 +120,6 @@ header::after{
 
 .section-formations{
     margin-top: 60px;
-    overflow: hidden;
-
 }
 
 article{
@@ -342,5 +341,15 @@ footer{
 
     .nav-network{
         margin-bottom: 20px;
+    }
+}
+@media screen and (orientation: portrait){
+    header{
+        background-image: url('../img/oldman-portrait.jpg');
+    }
+}
+@media screen and (orientation: landscape){
+    header{
+        background-image: url('../img/internet-oldman.jpg');
     }
 }
