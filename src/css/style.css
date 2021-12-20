@@ -122,7 +122,7 @@ header::after{
     margin-top: 60px;
 }
 
-article{
+.section-formations article{
     margin-top: 30px;
     
     position: relative;
@@ -133,16 +133,16 @@ article{
     transition: 0.5s;
     border-radius: 5px;
 }
-article svg{
+.section-formations article svg{
     transition: 0.5s;
     align-self: center;
     width: 66%;
     height: 138px;
 }
-article h3,article p{
+.section-formations article h3, .section-formations article p{
     margin: 10px;
 }
-article button{
+.section-formations article button{
     position: absolute;
     align-self: flex-end;
     bottom: 0px;
@@ -153,7 +153,7 @@ article button{
     height: 30px;
     width: 60px;
 }
-article button a{
+.section-formations article button a{
     text-decoration: none;
     color: #e6ce01;
 }
@@ -164,7 +164,7 @@ article button a{
     margin-top: 100px
 }
 
-/*------------ section about ------------*/
+/*------------ footer ------------*/
 
 footer{
     background-color: #1F1C1F;
@@ -180,6 +180,24 @@ footer{
     margin-left: 10px;
 }
 
+/*------------ section event ------------*/
+.next-event{
+    margin-top: 100px;
+}
+.next-event article{
+    margin-bottom: 25px;
+    background-color: #1F1C1F;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.clock{
+    float: left;
+    height: 25px;
+    margin-right: 5px;
+}
+.content-envent{ 
+    margin: 10px 20px;
+}
 /*------------ responsive------------*/
 
 @media screen and (min-width:1024px){
@@ -224,10 +242,10 @@ footer{
     
     /*------------ section formation ------------*/
 
-    article:hover{
+    .section-formations article:hover{
         transform: translateY(-15px);   
     }
-    article
+    .section-formations article
     {
         width: 25%;
         min-width: 325px;
@@ -239,6 +257,25 @@ footer{
 
     .nav-network{
         align-self: flex-end;
+    }
+    .nav-network img:hover{
+        cursor: pointer;
+    }
+
+    /*------------ section event ------------*/
+    
+    .event-illustration{
+        width: 330px;
+    }
+    article{
+        position: relative;
+    }
+    .content-envent{
+        margin: 10px 20px;
+    }
+    .clock{
+        height: 25px;
+        margin-right: 5px;
     }
 }
 @media screen and (min-width:768px) and (max-width:1023px){
@@ -279,13 +316,26 @@ footer{
     }
     /*------------ section formation ------------*/
 
-    article
+    .section-formations article
     {
         width: 25%;
         min-width: 300px;
         max-width: 350px;
     }
 
+    /*------------ section event ------------*/
+    
+    .content-envent h2{
+        font-size: 25px;
+    }
+    .event-illustration{
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+    }
+    .next-event article{
+        flex-wrap: wrap;
+    }
     /*------------ footer------------*/
 
     .nav-network{
@@ -334,13 +384,27 @@ footer{
 
 
     /*------------ section formation ------------*/
-    article
+    .section-formations article
     {
         width: 300px;
     }
 
     .nav-network{
         margin-bottom: 20px;
+    }
+
+    /*------------ section event ------------*/
+    
+    .content-envent h2{
+        font-size: 25px;
+    }
+    .event-illustration{
+        width: 100%;
+        max-height: 150px;
+        object-fit: cover;
+    }
+    .next-event article{
+        flex-wrap: wrap;
     }
 }
 @media screen and (orientation: portrait){
