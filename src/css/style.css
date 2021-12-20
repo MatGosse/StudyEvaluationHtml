@@ -96,7 +96,6 @@ nav .container{
 
 header{
     width: 100%;
-    height: 1080px;
     background-image: url('../img/internet-oldman.jpg');
     background-size: cover;
 }
@@ -219,6 +218,9 @@ footer{
     .active-menu::after{
         position: relative;
         bottom: 12px;
+    }
+    nav li{
+        margin: 0px 20px
     }
     
     /*------------ section formation ------------*/
